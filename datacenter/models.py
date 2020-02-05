@@ -24,10 +24,10 @@ class Visit(models.Model):
     def get_duration(visit):
         if not visit.leaved_at:
             now = timezone.now()
-            visit_time = (now - visit.entered_at).seconds
+            visit_time = (now - visit.entered_at).total_seconds()
         else:
-            visit_time = (visit.leaved_at - visit.entered_at).seconds
-        return visit_time
+            visit_time = (visit.leaved_at - visit.entered_at).total_seconds()
+        return int(visit_time)
 
     def format_duration(visit):
         non_closed_visit = {"who_entered": visit.passcard.owner_name}
