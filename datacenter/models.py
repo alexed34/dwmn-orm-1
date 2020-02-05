@@ -38,9 +38,7 @@ class Visit(models.Model):
 
     def is_visit_long(visit, minutes=60):
         visit_time = Visit.get_duration(visit) / 60
-        if visit_time > minutes:
-            return True
-        return False
+        return visit_time > minutes
 
     def __str__(self):
         return "{user} entered at {entered} {leaved}".format(
