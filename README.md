@@ -19,7 +19,7 @@ Django
 
 Запускать файл main.py
 
-```.........\django-orm-watching-storage-master2>python main.py```
+```\python main.py```
 
 В случае удачного запуска должно появится
 
@@ -35,4 +35,4 @@ Quit the server with CTRL-BREAK.
 
 
 #### 5. Цель проекта
-Прект предназначен для изучения основ Django-ORM на онлайн-курсе [dvmn.org](dvmn.org) .
+Прект предназначен для изучения основ Django-ORM на онлайн-курсе [dvmn.org](https://dvmn.org/) .
