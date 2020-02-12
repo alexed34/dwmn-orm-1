@@ -1,3 +1,4 @@
 django-orm-watching-storage-master2/**/__pycache__/**
 datacenter/__pycache__/__init__.cpython-37.pyc
 *.pyc
+.env
