@@ -33,13 +33,18 @@ Django
 
 В файл .env запишите эти данные.
 
-- HOST=хост
-- PORT=порт
-- NAME=имя базы
-- USER=пользователь
-- PASSWORD=пароль
+- DB_HOST=хост
+- DB_PORT=порт
+- DB_NAME=имя базы
+- DB_USER=пользователь
+- DB_PASSWORD=пароль
 
+и то же самое в виде сылки
 
+- DATABASES['default'] = dj_database_url.config(default='postgres://DB_USER:DB_PASSWORD@DB_HOST:DB_PORT/DB_NAME')
+
+- SECRET_KEY=запишите строку случайных значений, применяется для шифрования ваших данных, сгенерировать можно здесь [генератор secret key](https://miniwebtool.com/django-secret-key-generator/)
+- DEBUG=при отладке сайта установите 'True', после размещения для общего доступа замените на 'False', служит для показа отладочной информации при возникновении ошибок на сайте
 
 #### 4. Как запустить
 
